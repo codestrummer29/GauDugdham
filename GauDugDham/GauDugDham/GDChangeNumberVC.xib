@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GDChangeNumberVC" customModule="GauDugDham" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingBar" destination="xnM-66-lfD" id="7cJ-cQ-9vA"/>
+                <outlet property="textNew" destination="caP-Ag-WA2" id="S98-cO-Jsw"/>
+                <outlet property="textOld" destination="Tbl-re-KiO" id="7t6-M4-6TU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Old Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tbl-re-KiO">
+                    <rect key="frame" x="87" y="211.5" width="201" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aTN-lR-I3K"/>
+                    </constraints>
+                    <color key="textColor" red="0.29803921570000003" green="0.45882352939999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="caP-Ag-WA2">
+                    <rect key="frame" x="86.5" y="271.5" width="201" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5kb-GK-TnA"/>
+                    </constraints>
+                    <color key="textColor" red="0.29803921570000003" green="0.45882352939999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDx-O3-OII">
+                    <rect key="frame" x="86.5" y="463" width="201" height="44"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.45882352939999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="hTV-9v-5eT"/>
+                    </constraints>
+                    <state key="normal" title="Submit &amp; Verify OTP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="butVerify:" destination="-1" eventType="touchUpInside" id="gYD-IO-x5j"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xnM-66-lfD">
+                    <rect key="frame" x="157.5" y="303.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="7TK-dD-jLH"/>
+                        <constraint firstAttribute="width" constant="60" id="ITu-BX-CrH"/>
+                    </constraints>
+                    <color key="color" red="0.29803921570000003" green="0.45882352939999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="caP-Ag-WA2" firstAttribute="leading" secondItem="Tbl-re-KiO" secondAttribute="leading" id="AVj-39-MhK"/>
+                <constraint firstItem="caP-Ag-WA2" firstAttribute="trailing" secondItem="Tbl-re-KiO" secondAttribute="trailing" id="HXM-Ww-FWU"/>
+                <constraint firstItem="Tbl-re-KiO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="Hxj-gN-wXQ"/>
+                <constraint firstItem="xnM-66-lfD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JAd-S4-RHA"/>
+                <constraint firstItem="xnM-66-lfD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SI9-Jw-LhB"/>
+                <constraint firstItem="caP-Ag-WA2" firstAttribute="top" secondItem="Tbl-re-KiO" secondAttribute="bottom" constant="16" id="VfL-1a-lz4"/>
+                <constraint firstItem="ZDx-O3-OII" firstAttribute="leading" secondItem="caP-Ag-WA2" secondAttribute="leading" id="XpK-yC-5us"/>
+                <constraint firstAttribute="bottom" secondItem="ZDx-O3-OII" secondAttribute="bottom" constant="160" id="ebU-hX-BOs"/>
+                <constraint firstItem="ZDx-O3-OII" firstAttribute="trailing" secondItem="caP-Ag-WA2" secondAttribute="trailing" id="peT-6Z-RjO"/>
+                <constraint firstItem="Tbl-re-KiO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qPo-CO-mRs"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

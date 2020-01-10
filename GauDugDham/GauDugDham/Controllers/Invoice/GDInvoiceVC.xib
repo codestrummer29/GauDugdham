@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GDInvoiceVC" customModule="GauDugDham" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingBar" destination="sTf-mu-9nK" id="9pp-aA-nVb"/>
+                <outlet property="tableInvoice" destination="ec3-el-Cga" id="rBT-8T-kWK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-el-Cga">
+                    <rect key="frame" x="8" y="0.0" width="359" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gyI-16-aEb"/>
+                        <outlet property="delegate" destination="-1" id="5oZ-Kh-8Ev"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="sTf-mu-9nK">
+                    <rect key="frame" x="157" y="303" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="bNM-au-fPz"/>
+                        <constraint firstAttribute="width" constant="60" id="hsu-t7-vWg"/>
+                    </constraints>
+                    <color key="color" red="0.29803921570000003" green="0.45882352939999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sTf-mu-9nK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1cb-Ri-o9T"/>
+                <constraint firstItem="ec3-el-Cga" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="G1A-G9-JYe"/>
+                <constraint firstItem="sTf-mu-9nK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ktq-IY-jEE"/>
+                <constraint firstAttribute="trailing" secondItem="ec3-el-Cga" secondAttribute="trailing" constant="8" id="NtU-cg-jg1"/>
+                <constraint firstAttribute="bottom" secondItem="ec3-el-Cga" secondAttribute="bottom" id="YJn-bd-NPf"/>
+                <constraint firstItem="ec3-el-Cga" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a2M-T1-7dY"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="85.5"/>
+        </view>
+    </objects>
+</document>

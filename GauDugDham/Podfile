@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'GauDugDham' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GauDugDham
+    pod 'Alamofire', '~> 4.4'
+    pod 'AlamofireObjectMapper', '~> 4.0'
+    pod 'SDWebImage', '~>3.8'
+
+  target 'GauDugDhamTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GauDugDhamUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
